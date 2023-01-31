@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>this creates an object 3 properties</h1>
+        <p>the full name is a method</p>
+        <P id="demo"></P>
+        <script>
+            const myObject ={
+                firstName:"Neel",
+                lastName:"Udvadia",
+                fullName: function(){
+                    return this.firstName+" "+this.lastName;
+                }
+            }
+            document.getElementById('demo').innerHTML=myObject.fullName();
+        </script>
+    </body>
+</html>

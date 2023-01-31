@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>javascript for in loop for object property values</h1>
+        <p id="demo"></p>
+        <script>
+            const person={
+                fname:"Neel",
+                lname:"Udvadia",
+                age:23
+            };
+            let txt="";
+            for(let x in person){
+                txt +=person[x];
+            }
+            document.getElementById("demo").innerHTML=txt;
+        </script>
+    </body>
+</html>

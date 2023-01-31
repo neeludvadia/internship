@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>using curry function</h1>
+        <script>
+            function calculatevolume(length){
+                return function(breath){
+                    return function (height){
+                        return length*breath*height;
+                    }
+                }
+            }
+            console.log("volume of container is:"+calculatevolume(4)(5)(6));
+        </script>
+    </body>
+</html>

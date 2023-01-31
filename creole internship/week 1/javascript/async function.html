@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>javascript basic async function</h1>
+        <p id="demo"></p>
+        <script>
+            async function display(){
+                let myPromise = new Promise(function(resolve){
+                    let x=0;
+                    if(x==0){
+                    resolve("hello world");      
+                }else{
+                    resolve("error");
+                }
+            }
+                );
+                document.getElementById('demo').innerHTML=await myPromise;
+            }
+            display();
+        </script>
+    </body>
+</html>

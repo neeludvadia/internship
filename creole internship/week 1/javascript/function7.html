@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h1>function closure</h1>
+        <p id="demo">0</p>
+        <button onclick="count()">count!</button>
+<script>
+    const add = (function(){
+        let counter=0;
+        return function(){
+            counter+=1;
+            return counter;
+        }
+    })();
+
+    function count(){
+        document.getElementById('demo').innerHTML=add();
+    }
+</script>
+    </body>
+</html>

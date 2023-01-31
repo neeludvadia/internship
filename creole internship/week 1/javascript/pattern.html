@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+           let i;
+           let j;
+           let rows=9;
+           let space=0;
+           for(i=rows; i>=1; i--){
+            for(j=1; j<=space; j++){
+                document.write(" ");
+                for(j=1; j<=i; j++){
+                    document.write(j);
+                }
+                for(j=i; j<=i; j++)
+                document.write(j);
+                document.write("\n");
+                space++;
+            }
+           }
+        </script>
+    </body>
+</html>

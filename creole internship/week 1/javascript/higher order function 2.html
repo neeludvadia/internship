@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>higher order function</h1>
+        <script>
+        const birthyear=[1975,1997,2002,1995,1985];
+        const ages =birthyear.map(year=>2023-year);
+        console.log(ages);
+
+        </script>
+
+
+<script>
+    const birth=[1975,1997,2002,1995,1985];
+    const age=birth.map(
+        function (year){
+            return 2023-year;
+        }
+    );
+    console.log(age);
+</script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>borrowing method from another object</h1>
+        <p id="demo"></p>
+        <script>
+            const person={
+                firstName:"Neel",
+                lastName:"Udvadia",
+                fullName: function (){
+                    return this.firstName+" "+this.lastName;
+                }
+            }
+
+            const member={
+                firstName:"harsh",
+                lastName:"Gandhi",
+            }
+            let fullName= person.fullName.bind(member);
+            document.getElementById("demo").innerHTML=fullName();
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>calling fullname method of person on person1</h1>
+        <p id="demo"></p>
+        <script>
+            const person={
+                fullName: function(){
+                    return this.firstName+" "+this.lastName;
+                }
+            }
+            const person1 ={
+                firstName:"Neel",
+                lastName:"Udvadia"
+            }
+            const person2={
+                firstName: "Harsh",
+                lastName: " gandhi"
+            }
+            document.getElementById('demo').innerHTML=
+            person.fullName.call(person1);
+        </script>
+    </body>
+</html>

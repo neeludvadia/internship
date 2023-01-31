@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>call back function</h1>
+        <h2> hello world will print after 3 sec(3000 miliseconds)</h2>
+        <script>
+            setTimeout(
+                function() {
+                    myfunction("hello world");
+                },
+                3000
+            );
+            function myfunction(value){
+                document.write(value);
+            }
+        </script>
+    </body>
+</html>

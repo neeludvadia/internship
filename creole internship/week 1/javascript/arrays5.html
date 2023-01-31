@@ -1,0 +1,23 @@
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+<h2>shift()</h2>
+<p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+<button onclick="shift()">shift</button>
+<p id="demo"></p>
+
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+function shift(){
+fruits.shift();
+document.getElementById("demo").innerHTML = fruits;
+
+}
+</script>
+
+</body>
+</html>
+

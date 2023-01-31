@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>sorting in desending order</h1>
+        <p id="demo"></p>
+        <button onclick="descending()">sort!</button>
+        <script>
+            const num=[40,100,1,5,25,10];
+            document.getElementById('demo').innerHTML=num;
+            function descending(){
+                num.sort(
+                    function (a,b){
+                        return b-a
+                    }
+                );
+                document.getElementById("demo").innerHTML=num;
+            }
+        </script>
+    </body>
+</html>

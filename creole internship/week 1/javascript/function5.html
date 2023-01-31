@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1>passing arguments with call()</h1>
+        <p id="demo"></p>
+        <script>
+            const person={
+                fullName: function(country,city){
+                    return this.firstName+" "+this.lastName+","+country+","+city;
+                }
+
+                }
+                const Person1 ={
+                    firstName:"Neel",
+                    lastName:"Udvadia"
+                }
+
+                const Person2 ={
+                    firstName:"harsh",
+                    lastName:"gandhi"
+                }
+                document.getElementById('demo').innerHTML=
+                person.fullName.call(Person1,'india','ahmedabad');
+         </script>
+    </body>
+</html>

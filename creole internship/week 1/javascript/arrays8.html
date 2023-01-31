@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>using splice method to add elements</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <button onclick="add()">splice!</button>
+        <script>
+            const fruits =["banana","apple","orange"];
+            document.getElementById('demo').innerHTML=fruits;
+            function add(){    
+            fruits.splice(2,0,"mango","leeche");
+                document.getElementById("demo1").innerHTML=fruits;
+            }
+            
+        </script>
+    </body>
+</html>

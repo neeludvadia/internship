@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>removing elements from arrays using slice</h1>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <button onclick="remove()">remove</button>
+        <script>
+            const fruits =["mango","apple","orange","banana"];
+            document.getElementById('demo').innerHTML=fruits;
+            function remove(){
+                const fruit=fruits.slice(2);
+                document.getElementById('demo1').innerHTML=fruit;
+            }
+        </script>
+    </body>
+</html>

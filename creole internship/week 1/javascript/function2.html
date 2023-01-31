@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>function used as a variable</h1>
+        <p id="demo"></p>
+        <script>
+            function tocelsius(fahrenheit){
+                return (5/9)*(fahrenheit-32);
+            }
+            let x= tocelsius(77);
+            let text = "the temperature is" +" "+ x +" "+"celsius";
+            document.getElementById('demo').innerHTML=text;
+        </script>
+    </body>
+</html>

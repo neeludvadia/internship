@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <h1>nested objects and arrays</h1>
+        <p id="demo"></p>
+        <script>
+            let x="";
+            const person ={
+                fname:"Neel",
+                age:23,
+                cars: [
+                    {name:"ford",model:["fiesta","focus","mustang"]},
+                    {name:'bmw',model:["320","x3","x5"]},
+                    {name:"fiat", model:["500","panda"]}
+                ]
+            }
+            
+            for (let i in person.cars){
+                x+=" "+ person.cars[i].name + " ";
+                for(let j in person.cars[i].model){
+                    x+=" "+ person.cars[i].model[j]+" ";
+                }
+            }
+            document.getElementById('demo').innerHTML=x;
+        </script>
+    </body>
+</html>
