@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <script>
+            let countvalue = new Promise(function(resolve,reject){
+                resolve('promise resolved');
+            });
+
+            countvalue.finally(function greet(){
+                    console.log("this code is executed");
+            })
+        </script>
+    </body>
+</html>

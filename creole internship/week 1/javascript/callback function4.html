@@ -1,0 +1,35 @@
+<html>
+    <h1>this is asynchronus function</h1>
+    <body>
+<script>
+    function greet(){
+        console.log("hello world");
+    }
+
+    function sayname(name){
+        console.log("hello"+" "+name);
+            }
+            
+            setTimeout(greet,2000);
+            sayname('Neel');
+</script>
+
+
+<h1>same function using a call back</h1>
+<script>
+    function greet(name,myfunction){
+        console.log("hello world");
+        myfunction(name);
+    }
+
+    function sayname(name){
+        console.log("hello"+" "+name);
+    }
+
+    setTimeout(greet,2000,"neel",sayname);
+</script>
+</body>
+</html>
+
+
+

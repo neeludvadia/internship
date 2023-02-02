@@ -1,0 +1,23 @@
+<html>
+<body>
+    <h1>.then() method in promise</h1>
+<script>
+    let countvalue = new Promise(function(resolve,reject){
+        resolve("promise resolved");
+            }
+    );
+
+    countvalue.then(function(result){
+        console.log(result);
+    }
+    );
+
+    countvalue.then(function(){
+        console.log("we can call multiple functions this way")
+    }
+    );
+
+
+</script>
+</body>
+</html>
