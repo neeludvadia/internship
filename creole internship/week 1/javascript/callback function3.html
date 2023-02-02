@@ -1,0 +1,18 @@
+<script>
+function greet(name, callback) {
+    setTimeout(function(){
+        console.log('Hi' + ' ' + name);
+    callback();
+    },1000
+        )
+    
+}
+
+
+function callMe() {
+    console.log('I am callback function');
+}
+
+
+greet('Peter', callMe);
+</script>

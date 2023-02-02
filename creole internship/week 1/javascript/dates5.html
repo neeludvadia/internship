@@ -1,0 +1,72 @@
+<html>
+    <body>
+        <h1>dates to get method() to get month</h1>
+        <script>
+            const d= new Date();
+            document.write(d.getMonth()+1);
+        </script>
+
+        <h1>get month from array</h1>
+        <script>
+            const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const g = new Date("2020-05-25");
+            let month = months[g.getMonth()];
+            document.write(month);
+        </script>
+
+            <h1>to get date()</h1>
+            <script>
+                const h = new Date("2020-04-06");
+                let date = h.getDate();
+                document.write(date);
+            </script>
+
+            <h1>to get day method</h1>
+            <script>
+                const y = new Date("2020-03-12");
+                let day = y.getDay();
+                document.write(day);
+            </script>
+
+            <h1>to get hr</h1>
+            <script>
+                const i = new Date("2022-12-03");
+                let hr = i.getHours();
+                document.write(hr);
+            </script>
+
+                <h1>to get min</h1>
+                <script>
+                    const j = new Date("2022-12-03");
+                    let min = j.getMinutes();
+                    document.write(min);
+                    </script>
+
+                <h1>to get sec</h1>
+                <script>
+                    const k = new Date("2022-12-03");
+                    let sec = k.getSeconds();
+                    document.write(sec);
+                </script>
+
+                <h1>to get millie</h1>
+                <script>
+                    const l = new Date("2022-12-03");
+                    let milisec = l.getMilliseconds();
+                    document.write(milisec);
+                </script>
+
+                <h1>to get time</h1>
+                <script>
+                    const o = new Date("2022-12-03");
+                    let time = o.getDate();
+                    document.write(time);
+                </script>
+
+                <h1>timezone off set method</h1>
+                <script>
+                    const r = new Date();
+                    document.write(r.getTimezoneOffset());
+                </script>
+    </body>
+</html>

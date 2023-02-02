@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>async function timeout</h1>
+        <p id="demo"></p>
+        <script>
+            async function display(){
+                let myPromise = new Promise(function(resolve){
+                    setTimeout(function() {
+                        resolve("hello world");
+                    },3000
+                    );
+                });
+                document.getElementById('demo').innerHTML=await myPromise;
+
+            }
+            display();
+                    </script>
+    </body>
+</html>

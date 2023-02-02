@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <h1>.catch mathod in promise</h1>
+        <script>
+            let countValue = new Promise(function(resolve,reject){
+                reject("promise rejected");
+            }
+            );
+            
+            countValue.catch(function(result){
+                console.log(result);
+            })
+        </script>
+    </body>
+</html>
