@@ -1,0 +1,105 @@
+<html>
+    <body>
+        <h1>javascript objects converted to arrays</h1>
+        <script>
+            const person = {
+                fname: "Neel",
+                age: '30',
+                city: "new york",
+                date: new Date()
+            };
+
+            const array = Object.values(person);
+            document.write(array);
+        </script>
+
+        <h1>converting javascript objects to string</h1>
+        <script>
+            let string = JSON.stringify(person);
+            document.write(string);
+        </script>
+
+        <h1>converting dates into string</h1>
+        <script>
+            let datestring = JSON.stringify(person);
+            document.write(datestring);
+        </script>
+
+
+        <h1>converting function to string</h1>
+        <script>
+                const persons = {
+                fname: "Neel",
+                age: '30',
+                city: "new york",
+                date: new Date(),
+                age: function(){
+                    return 21;
+                }
+            };
+            persons.age = persons.age.toString();
+            let String = JSON.stringify(persons);
+            document.write(String);
+        </script>
+
+        <h1>convering arr to string</h1>
+        <script>
+                const Person = {
+                fname: "Neel",
+                age: '30',
+                city: "new york",
+                date: new Date(),
+                arr: ["harsh","neel","parth","akshit"]
+            };
+            let arrstring = JSON.stringify(Person.arr);
+            document.write(arrstring);
+        </script>
+
+        <h1>displaying name through get</h1>
+        <script>
+                const person1 = {
+                fname: "Neel",
+                age: '30',
+                city: "new york",
+                get first(){
+                    return this.fname;
+                }
+            };
+            document.write(person1.first);
+
+        </script>
+
+        <h1>using  object define property (enumerable)</h1>
+        <script>
+                const person2 = {
+                fname: "Neel",
+                age: '30',
+                city: "new york"
+                };
+                person2.lname= "Udvadia";
+
+                Object.defineProperty(person2,'age',{
+                    enumerable: false
+                });
+                for(const x in person2){
+                    console.log(x);
+                }
+        </script>
+
+        <h1>using configurable</h1>
+        <script>
+                const person3 = {
+                fname: "Neel",
+                age: '30',
+                city: "new york",
+                };
+                Object.defineProperty(person3,"city",{
+                    configurable: false
+                });
+                delete person3.city;
+                console.log(person3);
+        </script>
+
+
+    </body>
+</html>
