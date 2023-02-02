@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <h1>constructors</h1>
+        <script>
+            function Person(first,last,age,hair){
+                this.firstname = first;
+                this.lastname = last;
+                this.age = age;
+                this.haircolor = hair; 
+            }
+
+            const child = new Person('Neel','Udvadia',24,"blond");
+            document.write(child.firstname);
+            
+        </script>
+
+        <h1>adding properties new properties to constructors</h1>
+        <script>
+            Person.prototype.ocupation='student';
+            document.write(child.ocupation);
+        </script>
+        <h1>adding methods to the constructors</h1>
+        <script>
+            Person.prototype.name=function (){
+                return this.firstname + " "+ this.lastname;
+            };
+            document.write(child.name());
+        </script>
+    </body>
+</html>
