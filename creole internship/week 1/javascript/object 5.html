@@ -1,0 +1,51 @@
+<html>
+    <body>
+      <h1>creating set using set method</h1> 
+      <script>
+        const letter = new Set(['a','b','c','d']);
+        document.write(letter.size);
+      </script> 
+
+      <h1>creating a set and adding literal values</h1>
+      <script>
+        const javaset = new Set();
+        javaset.add("a");
+        javaset.add("b");
+        javaset.add("c");
+        document.write(javaset.size);
+      </script>
+
+      <h1>adding variables to sets</h1>
+      <script>
+        const a = 'a';
+        const b = 'b';
+        const c= 'c';
+
+        const addset = new Set();
+        addset.add(a);
+        addset.add(b);
+        addset.add(c);
+        document.write(addset.size);
+      </script>
+
+      <h1>only first element will be saved while adding same elements</h1>
+      <script>
+        addset.add("d");
+        addset.add('d');
+        addset.add('d');
+        addset.add('e');
+        addset.add("e");
+        addset.add('e');
+        document.write(addset.size);
+      </script>
+
+      <h1>for each function</h1>
+      <script>
+        let print = "";
+        addset.forEach (function(value){
+            print+= value +"<br>";  
+        });
+        document.write(print);
+      </script>
+    </body>
+</html>

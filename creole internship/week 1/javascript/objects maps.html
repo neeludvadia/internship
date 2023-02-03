@@ -1,0 +1,62 @@
+<html>
+    <body>
+        <h1>creating maps</h1>
+        <script>
+            let map = new Map();
+            map.set ('1','str');
+            map.set(1,'num');
+            map.set(true,'boolean');
+            document.write(map.get(1)+"<br>");
+            document.write(map.get('1')+"<br>");
+            document.write(map.size);
+        </script>
+
+        <h1>using objects as a key for map</h1>
+        <script>
+            let Neel = {name: 'neel'};
+            let travelcount = new Map();
+            travelcount.set(Neel,123);
+            document.write(travelcount.get(Neel));
+
+        </script>
+        <h1>iterating over map keys and values</h1>
+        <script>
+            let vegie = new Map([
+                ['cucumber',500],
+                ['cabage',350],
+                ['onion',100]
+            ]);
+            for (let vegitables of vegie.keys()){
+                document.write(vegitables+"<br>");
+            }
+
+            for (let vegievalues of vegie.values()){
+                document.write(vegievalues+"<br>");
+            }
+
+            for (let keyvalue of vegie.entries()){
+                document.write(keyvalue+"<br>");
+            }
+
+        </script>
+        <h1>creating map from objects</h1>
+        <script>
+            let objmap = {
+                name: "neel",
+                age: 23
+            }
+            let mapobj = new Map(Object.entries(objmap));
+            document.write(mapobj.get('age'));
+        </script>
+            <h1>creating objects from maps</h1>
+            <script>
+                let nap = new Map();
+                nap.set('banana',1);
+                nap.set('orange',2);
+                nap.set('mango',3);
+                let obj = Object.fromEntries(nap);
+                document.write(obj.mango);
+            </script>
+        
+    </body>
+</html>
