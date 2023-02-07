@@ -16,3 +16,4 @@ let car: Car = {
     model: carModel
 };
 console.log(car);
+export {};
