@@ -24,3 +24,4 @@ class student{
 
 const Persons = new student("Neel");
 console.log(Persons.getName());
+export {};
