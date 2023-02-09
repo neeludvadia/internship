@@ -12,4 +12,3 @@ function printPersonProperty(person: Person, property: keyof Person){
         age: 27
     };
     printPersonProperty(person,"name");
-    export {};
