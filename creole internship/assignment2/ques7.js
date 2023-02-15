@@ -1,3 +1,4 @@
+
 let a="bacd";
 let ae=[];
 let ad;
@@ -9,8 +10,8 @@ for(let i=0; i<a.length;i++){
 sort(ae,ad);
 function sort(ae){
 let ans=ae.sort();
+
 const print=ae.join(" ");
-console.log(print);
 
 for(let i=0;i<ae.length/2;i++){
     temp=ae[i];
@@ -18,10 +19,10 @@ for(let i=0;i<ae.length/2;i++){
     ae[ae.length-i-1]=temp;
     
 }
-let ad = ae.join(" ");
-console.log(ad);
-}
+let ad = ae;
 
+
+}
 
 
 
