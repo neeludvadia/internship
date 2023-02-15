@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+<style>
+#msg {
+    color: red;
+  }
+  </style>
+
+<form id="form">
+    <div id="msg"></div>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <input type="submit" value="Submit">
+  
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be stored in json file.</p>
+
+
+
+<script>
+    let form = document.getElementById('form');
+    let fname = document.getElementById('fname');
+    let lname = document.getElementById('lname');
+    let msg = document.getElementById('msg');
+
+    form.addEventListener("submit",(e)=> {
+        e.preventDefault();
+        formValidation();
+    });
+
+    let formValidation = () => {
+        if(fname.value==="" && lname.value===""){
+            console.log("failure");
+            msg.innerHTML = "First name cannot be blank";
+        }else{
+            console.log("success");
+            msg.innerHTML = ""
+            acceptData();
+            }
+    };
+
+    let data = [];
+    let acceptData = () =>{
+        data.push({
+            firstname: fname.value,
+            lastname: lname.value
+        });
+
+        localStorage.setItem("data",JSON.stringify(data));
+        console.log(data);
+    }
+</script>
+</body>
+</html>
